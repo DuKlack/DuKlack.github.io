@@ -64,7 +64,7 @@ const Dolci = [    {
     Food: "Cavolini di Bruxelles Arrosto",
     price: "$8",
     description: "Caramelized Brussels sprouts with balsamic glaze and toasted almonds.",
-    image: "/food img/Cavolini di Bruxelles Arrosto.jpg"
+    image: "/food img/Cavolini di Bruxelles Arrost.jpg"
 },
 {
     Food: "Tiramisù Vegano",
