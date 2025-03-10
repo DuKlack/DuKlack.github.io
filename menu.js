@@ -74,6 +74,7 @@ const Dolci = [    {
 }]
 let Appetizers = [];
 Appetizers.push(Entrees, Primis, Secondi, Dolci);
+let course_name=["Entrees", "Primism", "Secondi", "Dolci"];
    
 
     
@@ -92,7 +93,6 @@ function createAppetizerCard() {
                 let card = document.createElement("div");
                 card.className = "swiper-slide";
                 let img = document.createElement("img");
-      
                 img.src = item.image;
                 img.alt = item.Food;
                 let h3 = document.createElement("h3");
@@ -115,6 +115,27 @@ function renderEntreesMenu() {
             
             let box= document.createElement("div");
             box.className = "Food";
+
+            let course_section= document.createElement("div");
+            course_section.className="course";
+
+            let name_course= document.createElement("h1");
+            name_course.textContent=course_name[Appetizers.indexOf(course)];
+
+            let course_divider= document.createElement("div");
+            course_divider.className="course_divider"
+            let course_divider_left= document.createElement("div");
+            course_divider_left.className= "course_divider_shape_left";
+            
+            let course_divider_right= document.createElement("div");
+            course_divider_right.className= "course_divider_shape_right";
+            
+            
+            appendElementsToCard(course_divider,[course_divider_left,course_divider_right])
+            course_section.appendChild(name_course);
+            course_section.appendChild(course_divider);
+            food_name.appendChild(course_section);
+
             course.forEach(item => {
                 let food = document.createElement("div");
                 food.className = "menu-item";
@@ -132,6 +153,7 @@ function renderEntreesMenu() {
                 appendElementsToCard(food, [name, price, p, divider]);
                 
             });
+           
             food_name.appendChild(box);
 
         // Create and append a trapezoid after the list
