@@ -1,6 +1,10 @@
 body {
     position: relative;
     width: 100%;
+
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+  
+
   
 }
 .swiper {
@@ -42,6 +46,7 @@ body {
 }
 .menu{
     background-image: url("image_2.jpg");
+    max-width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +55,7 @@ body {
 .course {
     color: rgb(64, 255, 0);
     gap: 150px;
-    width: 100vw; /* Example */
+    width: 95vw; /* Example */
     position: relative;
 }
 .course_divider{
@@ -77,14 +82,18 @@ body {
     text-align: center;
 
 }
+.Food_box{
+    width:100% ;
+    overflow: auto; 
+}
 .Food {
-    width: 100vw;
+  
     background-color: #fff;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;;
     gap: 20px;
-
-    margin: auto;
+    overflow: auto; 
+   
 }
 
 .menu-item {
