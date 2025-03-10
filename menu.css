@@ -5,42 +5,88 @@ body {
 }
 .swiper {
     height: 450px;
+    display: flex;
+}
+.swiper-wrapper {
+    display: flex; /* Ensures slides appear in a row */
 }
 .swiper-slide {
     border: 1px solid #ccc;
     background: #fff;
-    display: inline-block;
-    flex-direction: column;
+    display: block;
+    flex-direction: column; /* Stack content */
     align-items: center;
     border-radius: 8px;
     padding: 16px;
-    margin: 16px;
+    margin: 8px; /* Reduced margin for Swiper */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: auto; /* Allow width to adjust */
-    height: auto; /* Allow height to fit content */
+    max-height: 380px;
     text-align: center;
-  
     max-width: 200px;
+    flex-shrink: 0;
 }
+
 .swiper-slide img {
     height: 150px;
-    width: 100%;
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent stretching */
     border-radius: 8px 8px 0 0;
 }
+
 .swiper-slide h3 {
     margin: 16px 0 8px;
 }
+
 .swiper-slide p {
     color: #555;
 }
+.menu{
+    background-image: url("image_2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.course {
+    color: rgb(64, 255, 0);
+    gap: 150px;
+    width: 100vw; /* Example */
+    position: relative;
+}
+.course_divider{
+    display: flex;
+}
+.course_divider_shape_left{
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 100px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
 
+.course_divider_shape_right{
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 100px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+.course h1{
+    text-align: center;
+
+}
 .Food {
+    width: 100vw;
+    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 900px;
+
     margin: auto;
 }
+
 .menu-item {
     font-size: 16px;
     line-height: 1.5;
@@ -62,13 +108,4 @@ body {
     background-color: white;
     padding: 0 10px;
     color: lightgreen;
-}
-.course_divider_shape {
-    width: 200px;
-    height: 100px;
-    border-bottom: 50px solid #ff0000;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    transform: rotate(180deg);
-    margin: 20px auto;
 }
