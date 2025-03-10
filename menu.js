@@ -137,6 +137,8 @@ function renderEntreesMenu() {
             food_name.appendChild(course_section);
 
             course.forEach(item => {
+                let food_box=document.createElement("div");
+                food_box.className="Food_box";
                 let food = document.createElement("div");
                 food.className = "menu-item";
                 let name = document.createElement("span");
@@ -149,7 +151,8 @@ function renderEntreesMenu() {
                 p.textContent = item.description;
                 let divider = document.createElement("div");
                 divider.className = "divider";
-                box.appendChild(food)
+                box.appendChild(food_box)
+                food_box.appendChild(food)
                 appendElementsToCard(food, [name, price, p, divider]);
                 
             });
