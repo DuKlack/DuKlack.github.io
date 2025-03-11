@@ -151,8 +151,8 @@ function renderEntreesMenu() {
                 p.textContent = item.description;
                 let divider = document.createElement("div");
                 divider.className = "divider";
-                box.appendChild(food_box)
-                food_box.appendChild(food)
+                box.appendChild(food)
+                
                 appendElementsToCard(food, [name, price, p, divider]);
                 
             });
