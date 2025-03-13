@@ -1,8 +1,6 @@
-
- 
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const header = document.createElement("header");
-    const nav = document.createElement("nav");
+    const nav = document.createElement("div");
     nav.classList.add("navbar");
     
     const logoDiv = document.createElement("div");
@@ -26,30 +24,43 @@
     nav.append(logoDiv, navLinks, orderBtn);
     header.appendChild(nav);
     document.body.prepend(header);
-    });
 
-function setActiveButton() {
-    let buttons = document.querySelectorAll(".nav-links a"); // Select all anchor tags
+    // Select navbar here after it's appended
+    const navbar = document.querySelector(".navbar");
+
+    // Call the function to set active button
+    setActiveButton(navbar);
+});
+
+function setActiveButton(navbar) {
+    let buttons = navbar.querySelectorAll(".nav-links a"); // Select all anchor tags in the navbar
     let currentFile = location.pathname.split("/").pop().split("#")[0].split("?")[0]; // Get file name without hash or query
 
     buttons.forEach(button => {
         let buttonFile = button.getAttribute("href").split("/").pop().split("#")[0].split("?")[0];
-        console.log(`Checking button: ${buttonFile}`); // Debugging log
-        console.log(currentFile)
 
         if (buttonFile === currentFile) {
-            
-            button.style.color= "red"; // Correct class addition
-            console.log(1)
-        } 
+            button.style.color = "red"; // Set color for active button
+        }
     });
 }
 
 // Ensure buttons exist before applying function
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM fully loaded");
-    console.log(document.querySelectorAll(".nav-links a")); // Debugging log
-    setActiveButton();
+window.addEventListener("hashchange", function() {
+    const navbar = document.querySelector(".navbar"); // Re-select navbar in case it's re-rendered
+    setActiveButton(navbar);
 });
-
-window.addEventListener("hashchange", setActiveButton);
+document.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    scroll_pos = window.scrollY;
+     // Check if navbar exists
+     if (navbar) {
+        if (scroll_pos > 300) {
+            navbar.style.backgroundColor = "rgb(255, 255, 255,.0)"; // Set a semi-transparent background
+            console.log(1);
+        } else {
+            navbar.style.backgroundColor = "rgb(132, 102, 102)"; // Set a transparent background
+            console.log(2);
+        }
+    }
+});
