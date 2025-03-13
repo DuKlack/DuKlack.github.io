@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="heroes.css">
 <link rel="stylesheet" href="footer.css">
 <script src="header.js" defer></script>
+
+<script src="footer_creator.js"></script>
+
+
 <style>
 body {
     overflow-x: hidden ;
@@ -22,25 +26,48 @@ body {
     overflow: auto;
 }
 
-.WhyVegan {
+.WhyVegan{
+    overflow: hidden;
     margin: auto;
     font-size: 18px;
     line-height: 1.5;
     width: 80%; /* Adjust width to prevent full stretch */
     display: flex;
+    
     flex-direction: row; /* Stack elements inside */
     align-items: center; /* Center text & images */
      /* Ensure text aligns */
+     gap: 5em;
+}
+.WhyVegan img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    
 }
 
-.WhyVegan img {
+.WhyVegan .images{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.WhyVegan .images .img1  {
+    align-self: flex-start;
     height: auto;
-    width: 40%;
+    width: 10em ; 
+
+}
+.WhyVegan .images .img2  {
+    height: auto;
+    align-self: flex-end;
+    width: 10em; 
+    
 }
 
 .WhyVegan .Infomation { /* Fix selector */
-    width: 40%;
-    text-align: center;
+    width: 50%;
+    
+    text-align: left;
 }
 
 .Who_are_we {
@@ -56,7 +83,7 @@ body {
 .Who_are_we.Infomation{
     
     width: 50%;
-    text-align: center;
+    text-align: left;
 }
 .Document{
     display: flex; /* Enables flexbox */
@@ -90,18 +117,26 @@ body {
 </head>
 
 <body>
-
+    <script src="hero_creator.js" ></script>
 
 
 <div class="Content">
     <div class="WhyVegan">
-        <img src="Semplice__2_-removebg-preview.png" alt="">
+        <div class="images">
+            <div class="img1">
+                <img src="Semplice__2_-removebg-preview.png" alt="place_holder">
+            </div>
+            <div class="img2">
+                <img src="food img/Rigatoni alla Vodka.jpg" alt="place_holder">
+            </div>
+        </div>
+    
         <div class="Infomation">
-        <h1>Why Vegan?</h1>
-        <p>
-            Vegan food refers to plant-based foods. We believe our mission is to bring healthy food to our customers’ tables. Vegan food helps reduce the risk of chronic diseases, lowers cholesterol, and improves blood pressure. Not only that, but we also want to promote sustainability by reducing carbon footprints and supporting local farmers.
-        </p>
-    </div>
+            <h1>Why Vegan?</h1>
+            <p>
+                Vegan food refers to plant-based foods. We believe our mission is to bring healthy food to our customers’ tables. Vegan food helps reduce the risk of chronic diseases, lowers cholesterol, and improves blood pressure. Not only that, but we also want to promote sustainability by reducing carbon footprints and supporting local farmers.
+            </p>
+        </div>
     </div>
 </div>
 
@@ -110,7 +145,7 @@ body {
     <div class="Who_are_we">
         <div class="Infomation">
 
-          <h2>Who Are We?</h2>
+            <h2>Who Are We?</h2>
             <p>
                 We are the Semplice Verde family from Palisades High School, serving you authentic,
                 tasty Italian food since 2025. We opened this restaurant because we recognize the 
@@ -151,7 +186,7 @@ body {
             <p>https://pixabay.com/illustrations/facebook-icon-button-internet-7678778/</p>
             <p>https://pixabay.com/illustrations/instagram-icon-logo-social-media-7678783/</p>
 </div>
-<script src="footer_creator.js"></script>
+
 
 </body>
 </html>
