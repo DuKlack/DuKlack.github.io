@@ -52,15 +52,11 @@ window.addEventListener("hashchange", function() {
 });
 document.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
-    scroll_pos = window.scrollY;
-     // Check if navbar exists
-     if (navbar) {
-        if (scroll_pos > 300) {
-            navbar.style.backgroundColor = "rgb(255, 255, 255,.0)"; // Set a semi-transparent background
-            console.log(1);
-        } else {
-            navbar.style.backgroundColor = "rgb(132, 102, 102)"; // Set a transparent background
-            console.log(2);
-        }
+
+    if (navbar) {
+        let scrollPos = window.scrollY;
+        let opacity = Math.min(1, 0.1 + scrollPos / 1000); // Increase opacity with scroll
+       
+        navbar.style.backgroundColor = `rgba(0, 255, 255, ${opacity})`; // Update background color
     }
 });

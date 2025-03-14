@@ -82,17 +82,27 @@ body {
     text-align: center;
 
 }
-
-.Food {
    
+.container {
+    gap: 20px;
     background-color: #fff;
     width: 100%;
-    overflow: auto;
+    overflow-x: hidden;
     justify-content: center;
+    border: 1px solid #fff; /* Ensures the border is visible */
+    padding-bottom: 50px; /* Adds extra space at the bottom */
+}
+
+
+.Food {
+    height: fit-content;
+    gap: 30px;
+    width: 100%;
     display: grid;
+    border: #fff;
+    border-bottom-width:100px ;
+   
     grid-template-columns: 1fr 1fr;
-    height: 20em;
-    
 }
 .menu-item {
     margin: auto;

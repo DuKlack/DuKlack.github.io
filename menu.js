@@ -112,7 +112,9 @@ function renderEntreesMenu() {
     let food_name = document.getElementById("food_name");
     if (food_name) {
         Appetizers.forEach(course => {
-            
+            let container= document.createElement("div")
+            container.className="container";
+
             let box= document.createElement("div");
             box.className = "Food";
 
@@ -157,7 +159,8 @@ function renderEntreesMenu() {
                 
             });
            
-            food_name.appendChild(box);
+            container.appendChild(box)
+            food_name.appendChild(container);
 
         // Create and append a trapezoid after the list
           
