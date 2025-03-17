@@ -1,11 +1,7 @@
 body {
     position: relative;
     width: 100%;
-
     overflow-x: hidden; /* Hides horizontal scrollbar */
-  
-
-  
 }
 .swiper {
     height: 450px;
@@ -44,6 +40,7 @@ body {
 .swiper-slide p {
     color: #555;
 }
+
 .menu{
     background-image: url("image_2.jpg");
     max-width: 100%;
@@ -52,11 +49,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.filter{
+    background-color: black;
+    opacity: 0.4;
+}
+
+
 .course {
     color: rgb(64, 255, 0);
     gap: 150px;
     width: 100vw; /* Example */
     position: relative;
+    background-color: rgba(1,1,1,0.4);
 }
 .course_divider{
     display: flex;
@@ -82,8 +86,21 @@ body {
     text-align: center;
 
 }
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 0 100% 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
    
 .container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
     gap: 20px;
     background-color: #fff;
     width: 100%;
