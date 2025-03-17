@@ -55,7 +55,7 @@ body {
 .course {
     color: rgb(64, 255, 0);
     gap: 150px;
-    width: 95vw; /* Example */
+    width: 100vw; /* Example */
     position: relative;
 }
 .course_divider{

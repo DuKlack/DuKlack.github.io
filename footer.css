@@ -1,40 +1,65 @@
 footer {
-    display: inline-block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
+ display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between; /* Distributes elements evenly */
+    align-items: center; /* Centers items vertically */
+    background-color: #941e1e;
     color: rgb(230, 101, 101);
     text-align: center;
+    padding: 20px;
+    width: 100%;
+    min-height: fit-content; 
 }
-
-.Hours {
-    margin-left: auto;
-    padding: 10px;
-}
-
-.contract {
-
-    position: relative;
-    align-items: center;
-    left: 0;
-}
-
-.order {
+.contract-box, .social_media {
     display: flex;
-    align-items: flex-start;
-}
-
-.social {
-    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 30%;
 }
 
-.order {
-    align-items: flex-start;
+.location{
+
+    width: 100%;
+}
+.contract_info{
+    width: 100%
 }
 
-.social {
-    margin-left: auto;
-    margin-right: 0;
+.slogan{
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/16/12/46/food-4936949_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 30vw;
 }
+.media{
+    width: 100%;
+    height: auto;
+}
+.media img {
+    height: fit-content;
+    width:80px;
+}
+.media a{
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .slogan {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contract-box, .social_media {
+        width: 100%;
+    }
+}
+
+
+

@@ -1,37 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
     const footer = document.createElement("footer");
+    footer.innerHTML = `
+        <div class="slogan"></div>
+        <div class="contract-box">
+            <div class="location">
+                <h3>Where to find us?</h3>
+                <p>1540 West Blvd Suite #107, Charlotte, NC 28208<br>
+                   Monday-Sunday<br>
+                   12pm-9pm</p>
+            </div>
+
+            <div class="contract_info">
+                <h3>Contact Information</h3>
+                <p>Phone: 123 456 7890<br>
+                   Email: SemplicVerde@gmail.com</p>
+            </div>  
+          
+        </div>
+
+        <div class="social_media">
+            <div class="open_hours"> 
+                <h3>Our Opening Hours</h3>
+                <p>MONDAY-FRIDAY 9:00 a.m. – 5:00 p.m.</p>
+                <p>SATURDAY 8:00 a.m. – 3:00 p.m.</p>
+                <p>SUNDAY 9:00 a.m. – 2:00 p.m.</p>
+            </div>
+
+            <div class="media"> 
+                <h3>Our Social Media</h3>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2022/04/01/19/41/logo-7105561_1280.png" alt="Instagram Logo">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2022/04/01/19/41/logo-7105561_1280.png" alt="Facebook Logo">
+                </a>
+                <a href="https://www.x.com/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2022/04/01/19/41/logo-7105561_1280.png" alt="Twitter Logo">
+                </a>
+            </div>
+        </div>
+    `;
     
-    // Social Media Section
-    const socialMedia = document.createElement("div");
-    socialMedia.classList.add("social-media");
-    
-    const facebook = document.createElement("a");
-    facebook.href = "https://www.facebook.com/";
-    facebook.innerHTML = '<img src="food-img/facebook-7678778_1280.png" alt="Facebook" width="100" height="100">';
-    
-    const instagram = document.createElement("a");
-    instagram.href = "https://www.instagram.com/";
-    instagram.innerHTML = '<img src="food-img/instagram-7678783_1280.png" alt="Instagram" width="100" height="100">';
-    
-    const address = document.createElement("a");
-    address.href = "https://www.google.com/maps";
-    address.textContent = "Address";
-    
-    socialMedia.append(facebook, instagram, address);
-    
-    // Contact Section
-    const contact = document.createElement("div");
-    contact.classList.add("contact");
-    contact.innerHTML = "<p>Phone: 123-456-7890</p><p>Email: xxxxx@gmail.com</p>";
-    
-    // Location Section
-    const location = document.createElement("div");
-    location.classList.add("location");
-    location.innerHTML = "<p>Monday-Friday: 9am-9pm</p><p>Saturday-Sunday: 10am-10pm</p>";
-    
-    // Append sections to footer
-    footer.append(socialMedia, contact, location);
-    
-    // Append footer to the body
     document.body.appendChild(footer);
 });
