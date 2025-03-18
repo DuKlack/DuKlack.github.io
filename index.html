@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="footer.css">
     <script src="header.js" defer></script>
 </head>
+<style>
+.Content {
+    width: 100vw;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 50vh; /* Makes it take full screen height */
+    overflow: auto;
+}
+
+.Who_are_we{
+    overflow: hidden;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 90%; /* Adjust width to prevent full stretch */
+    display: flex;
+    flex-direction: row; /* Stack elements inside */
+    align-items: center; /* Center text & images */
+     gap: 20px;
+}</style>
 <body>
 
 <header>
@@ -34,10 +55,15 @@
         <a href="menu.html" class="menu-btn">To Go Menu</a>
     </div>
 </section>
+<div class="Content">
+    <div class="Who_are_we">
 
-<p>We are an Italian-American restaurant providing freshly prepared meals. 
-   Our mission is to bring healthy vegan food. We also want to promote sustainability and support our farmers.
-</p>
+    
+        <p>We are an Italian-American restaurant providing freshly prepared meals. 
+        Our mission is to bring healthy vegan food. We also want to promote sustainability and support our farmers.
+        </p>
+    </div>
+</div>
 
 <hr>
 

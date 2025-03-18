@@ -86,21 +86,9 @@ body {
     text-align: center;
 
 }
-@keyframes appear {
-    from {
-      opacity: 0;
-      clip-path: inset(100% 0 100% 0);
-    }
-    to {
-      opacity: 1;
-      clip-path: inset(0 0 0 0);
-    }
-  }
-   
+
 .container {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    
     gap: 20px;
     background-color: #fff;
     width: 100%;
@@ -109,7 +97,27 @@ body {
     border: 1px solid #fff; /* Ensures the border is visible */
     padding-bottom: 50px; /* Adds extra space at the bottom */
 }
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(0 0 0 0);
+      
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(100% 100% 0 0);
+      
+    }
+  }
+   
+.transtion{
+    height: auto;
+    width: auto;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
 
+}
 
 .Food {
     height: fit-content;
@@ -118,7 +126,6 @@ body {
     display: grid;
     border: #fff;
     border-bottom-width:100px ;
-   
     grid-template-columns: 1fr 1fr;
 }
 .menu-item {

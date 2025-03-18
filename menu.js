@@ -118,6 +118,10 @@ function renderEntreesMenu() {
             let box= document.createElement("div");
             box.className = "Food";
 
+            let transtion= document.createElement("div");
+            transtion.className = "transtion";
+            transtion.appendChild(box)
+
             let course_section= document.createElement("div");
             course_section.className="course";
 
@@ -132,11 +136,13 @@ function renderEntreesMenu() {
             let course_divider_right= document.createElement("div");
             course_divider_right.className= "course_divider_shape_right";
             
-            
+            let background=document.createElement("div");
+            appendElementsToCard(background,[course_section,container])
+
             appendElementsToCard(course_divider,[course_divider_left,course_divider_right])
             course_section.appendChild(name_course);
             course_section.appendChild(course_divider);
-            food_name.appendChild(course_section);
+            
 
             course.forEach(item => {
                 let food_box=document.createElement("div");
@@ -159,8 +165,8 @@ function renderEntreesMenu() {
                 
             });
            
-            container.appendChild(box)
-            food_name.appendChild(container);
+            container.appendChild(transtion)
+            food_name.appendChild(background);
 
         // Create and append a trapezoid after the list
           

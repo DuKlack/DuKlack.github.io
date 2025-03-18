@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="contract-box">
             <div class="location">
                 <h3>Where to find us?</h3>
-                <p>1540 West Blvd Suite #107, Charlotte, NC 28208<br>
-                   Monday-Sunday<br>
-                   12pm-9pm</p>
+                <p>1540 West Blvd Suite #107, Charlotte, NC 28208
+                   </p>
             </div>
 
             <div class="contract_info">
