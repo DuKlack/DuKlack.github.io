@@ -119,7 +119,7 @@ function renderEntreesMenu() {
             box.className = "Food";
 
             let transtion= document.createElement("div");
-            transtion.className = "transtion";
+            transtion.className = "transition";
             transtion.appendChild(box)
 
             let course_section= document.createElement("div");

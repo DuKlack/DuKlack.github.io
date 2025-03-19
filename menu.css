@@ -56,14 +56,25 @@ body {
 
 
 .course {
-    color: rgb(64, 255, 0);
-    gap: 150px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
     width: 100vw; /* Example */
     position: relative;
     background-color: rgba(1,1,1,0.4);
 }
+.course h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Moves it left by 50% of its own width */
+}
 .course_divider{
     display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .course_divider_shape_left{
     width: 0;
@@ -88,7 +99,7 @@ body {
 }
 
 .container {
-    
+   
     gap: 20px;
     background-color: #fff;
     width: 100%;
@@ -96,36 +107,17 @@ body {
     justify-content: center;
     border: 1px solid #fff; /* Ensures the border is visible */
     padding-bottom: 50px; /* Adds extra space at the bottom */
+    
 }
-@keyframes appear {
-    from {
-      opacity: 0;
-      clip-path: inset(0 0 0 0);
-      
-    }
-    to {
-      opacity: 1;
-      clip-path: inset(100% 100% 0 0);
-      
-    }
-  }
-   
-.transtion{
-    height: auto;
-    width: auto;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 20% cover 40%;
 
-}
 
 .Food {
+    
     height: fit-content;
-    gap: 30px;
+    row-gap: 0px;
     width: 100%;
     display: grid;
-    border: #fff;
-    border-bottom-width:100px ;
+    border-bottom:20px  solid #fff;
     grid-template-columns: 1fr 1fr;
 }
 .menu-item {
