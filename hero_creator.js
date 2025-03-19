@@ -5,7 +5,7 @@ const heroContent = document.createElement('div');
 heroContent.classList.add('hero-content');
 
 const heading = document.createElement('h1');
-heading.textContent = 'Semplice Verde';
+heading.textContent = 'About Us';
 
 const paragraph = document.createElement('p');
 paragraph.textContent = 'A taste of tradition.';

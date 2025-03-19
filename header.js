@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.createElement("ul");
     navLinks.classList.add("nav-links");
     navLinks.innerHTML = `
-        <li><a href="/">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Restaurant Menu</a></li>
         <li><a href="Contact.html">Contact Us</a></li>
         <li><a href="AboutUs.html">About Us</a></li>
@@ -38,7 +38,11 @@ function setActiveButton(navbar) {
 
     buttons.forEach(button => {
         let buttonFile = button.getAttribute("href").split("/").pop().split("#")[0].split("?")[0];
-
+        console.log(currentFile)
+        console.log(buttonFile)
+        if (currentFile==""){
+            buttons[0].style.color = "red";
+        }
         if (buttonFile === currentFile) {
             button.style.color = "red"; // Set color for active button
         }
