@@ -137,6 +137,7 @@ function renderEntreesMenu() {
             course_divider_right.className= "course_divider_shape_right";
             
             let background=document.createElement("div");
+            background.className="background"+course_name[Appetizers.indexOf(course)];
             appendElementsToCard(background,[course_section,container])
 
             appendElementsToCard(course_divider,[course_divider_left,course_divider_right])

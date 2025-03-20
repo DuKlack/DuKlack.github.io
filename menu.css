@@ -42,7 +42,6 @@ body {
 }
 
 .menu{
-    background-image: url("image_2.jpg");
     max-width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -55,6 +54,32 @@ body {
 }
 
 
+.backgroundEntrees{
+    background-image:url("https://cdn.pixabay.com/photo/2017/01/09/16/16/tomato-salad-1966921_960_720.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+.backgroundPrimism{
+    background-image:url("https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+.backgroundSecondi{
+    background-image:url("https://cdn.pixabay.com/photo/2017/02/07/23/09/vegetarian-2047243_960_720.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+.backgroundDolci{
+    background-image:url("https://cdn.pixabay.com/photo/2016/08/06/20/14/breakfast-1575064_1280.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+    
+
 .course {
     color: rgb(255, 255, 255);
     justify-content: center;
@@ -63,6 +88,7 @@ body {
     width: 100vw; /* Example */
     position: relative;
     background-color: rgba(1,1,1,0.4);
+    padding-top: 10vw;
 }
 .course h1 {
     position: absolute;
@@ -114,7 +140,7 @@ body {
 .Food {
     
     height: fit-content;
-    row-gap: 0px;
+    row-gap: 40px;
     width: 100%;
     display: grid;
     border-bottom:20px  solid #fff;
