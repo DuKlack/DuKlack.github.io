@@ -1,5 +1,6 @@
 footer {
- display: flex;
+    z-index: 999;
+    display: flex;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: space-between; /* Distributes elements evenly */
     align-items: center; /* Centers items vertically */

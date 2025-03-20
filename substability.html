@@ -29,11 +29,12 @@
     
  
         .Vegan, .Impact {
-            z-index: 1;
+            
+            height: fit-content;
             margin: auto;
             font-size: 18px;
             line-height: 1.5;
-            width: 90%; /* Adjust width to prevent full stretch */
+            width: 100%; /* Adjust width to prevent full stretch */
             display: flex;
             flex-direction: row; /* Stack elements inside */
             align-items: center; /* Center text & images */
@@ -42,6 +43,7 @@
         }
         .Vegan .image-container {
             position: relative;
+          
             width: 40vw;
             height: 40vw;
             border-radius: 50%;
@@ -56,19 +58,57 @@
             object-fit: cover;
         }
         .Vegan .info{
-
+            padding-right: 10%;
             width: 60%;
         }
         .content{
             width: 100%;
         }
+        .Impact
+        {
+            height: 20vw;
+        }
         .Impact .image-container{
+            width: 60%;
+            position: relative;
            
+        }
+        
+        .image1{
+            background-image: url("https://cdn.pixabay.com/photo/2024/02/28/20/53/ai-generated-8602864_1280.jpg");
             border-radius: 50% 50% 0 0 / 100% 100% 0 0;
             border: 5px solid #000;
             border-bottom: 0;
-            width: 40px;
-            height: 20px;
+            aspect-ratio:2/1;
+            background-position: center;
+            width: 40%;
+            background-size: 90%;
+            right:0;
+            z-index: -1;   
+            position: absolute; 
+            top:  0; 
+            right: 0; 
+            
+        }
+        .image2{
+            background-image: url("https://cdn.pixabay.com/photo/2024/09/30/18/29/health-9086445_1280.jpg");
+            position: absolute;
+            width: 50%;
+            aspect-ratio:1/1;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 8px solid rgb(255, 0, 0);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            top:0; 
+            right: 0; 
+            background-position: center;
+            background-size: 98%;
+            transform: translateY(-76%) translateX(-30%);
+        }
+        .Impact .info{
+            padding-left: 10%;
+            width: 40%;
+            
         }
     </style>
     
@@ -108,17 +148,20 @@
             
             <div class="info">
                 <h1>Benefits Of Vegan Diet</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum vitae lacus lobortis lacinia. Donec tristique arcu massa, at pharetra tortor feugiat non. Etiam vehicula hendrerit aliquet. Donec sed nulla dapibus</div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum vitae lacus lobortis lacinia. Donec tristique arcu massa, at pharetra tortor feugiat non. Etiam vehicula hendrerit aliquet. Donec sed nulla dapibus
+            </div>
         </div>
 
         <div class="Impact">
-            <div class="image-container">
-               
-            </div>
+            
             
             <div class="info">
                 <h1>Benefits Of Vegan Diet</h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum vitae lacus lobortis lacinia. Donec tristique arcu massa, at pharetra tortor feugiat non. Etiam vehicula hendrerit aliquet. Donec sed nulla dapibus</div>
+                <div class="image-container">
+                    <div class="image1"></div>
+                    <div class="image2"></div>
+                </div>
         </div>
     
     </div>
