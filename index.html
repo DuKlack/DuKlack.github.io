@@ -11,7 +11,12 @@
     <script src="header.js" defer></script>
 </head>
 <style>
+@font-face {
+    font-family: Bubbly;
+    src: url("document/SuperBubbly-G35nA.ttf");
+}
 .Content {
+    
     width: 100vw;
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers content horizontally */
@@ -19,8 +24,13 @@
     min-height: 50vh; /* Makes it take full screen height */
     overflow: auto;
 }
-
+.info{
+    font-family: Bubbly;
+    
+}
 .Who_are_we{
+    
+    font-family:Bubbly;
     overflow: hidden;
     margin: auto;
     font-size: 18px;
@@ -30,27 +40,26 @@
     display: flex;
     flex-direction: row; /* Stack elements inside */
     align-items: center; /* Center text & images */
-    gap: 30px;
+    column-gap:5%;
 }
 .Who_are_we .imgContainner{
-    margin: 30px;
+
     position: relative;
-    width: 20em;
-    height: 20em;
+    width: 60%;
+   aspect-ratio: 1/1;
     border-radius: 70%;
     overflow: hidden;
     border: 8px solid white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    align-items: center;
+    
     background-image: url("https://cdn.pixabay.com/photo/2020/07/06/08/29/espagueti-5376039_960_720.jpg");
      background-position: center;
+    background-size:120% ;
   
     
      
 }
-.Who_are_we p{
-    width: 40%;
-}
+
 </style>
 <body>
 
@@ -58,18 +67,20 @@
 <section class="hero">
     <div class="hero-content">
         <h1>Semplice Verder</h1>
-        <p>Vegan for You</p>
+        <p>Taste of tradition</p>
         <a href="menu.html" class="menu-btn">To Go Menu</a>
     </div>
 </section>
 <div class="Content">
     <div class="Who_are_we">
         <div class="imgContainner">
-            </div>
+        </div>
+        <div class="info">
+            <p>We are an Italian-American restaurant providing freshly prepared meals. 
+            Our mission is to bring healthy vegan food. We also want to promote sustainability and support our farmers.
+            </p>
+        </div>
         
-        <p>We are an Italian-American restaurant providing freshly prepared meals. 
-        Our mission is to bring healthy vegan food. We also want to promote sustainability and support our farmers.
-        </p>
     </div>
 </div>
 

@@ -61,6 +61,6 @@ document.addEventListener("scroll", function () {
         let scrollPos = window.scrollY;
         let opacity = Math.min(1, 0.1 + scrollPos / 1000); // Increase opacity with scroll
        
-        navbar.style.backgroundColor = `rgba(0, 255, 255, ${opacity})`; // Update background color
+        navbar.style.backgroundColor = `rgba(160, 0, 28, ${opacity})`; // Update background color
     }
 });

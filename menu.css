@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Bubbly;
+    src: url("document/SuperBubbly-G35nA.ttf");
+}
 body {
     position: relative;
     width: 100%;
@@ -38,6 +42,7 @@ body {
 }
 
 .swiper-slide p {
+    font-family: Bubbly;
     color: #555;
 }
 
@@ -147,6 +152,7 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 .menu-item {
+   
     margin: auto;
     font-size: 20px;
     line-height: 1.5;
@@ -171,3 +177,7 @@ body {
     padding: 0 10px;
     color: lightgreen;
 }
+.menu-item p {
+    font-family:Bubbly ;
+}
+
