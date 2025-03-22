@@ -125,8 +125,13 @@ function renderEntreesMenu() {
             let course_section= document.createElement("div");
             course_section.className="course";
 
+            let name=document.createElement("div");
+            name.className="box";
+           
+
             let name_course= document.createElement("h1");
             name_course.textContent=course_name[Appetizers.indexOf(course)];
+            name.appendChild(name_course)
 
             let course_divider= document.createElement("div");
             course_divider.className="course_divider"
@@ -141,7 +146,7 @@ function renderEntreesMenu() {
             appendElementsToCard(background,[course_section,container])
 
             appendElementsToCard(course_divider,[course_divider_left,course_divider_right])
-            course_section.appendChild(name_course);
+            course_section.appendChild(name);
             course_section.appendChild(course_divider);
             
 

@@ -90,18 +90,26 @@ body {
     background-position: center;
 }
     
+.box{
+    display: flex;
+    min-height: 200px;
+    height:20vw;
+}
+
 
 .course {
+    
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
-    height: 15vw;
+    height: fit-content;
     width: 100vw; /* Example */
     position: relative;
     background-color: rgba(1,1,1,0.4);
-    padding-top: 10vw;
+   
+    
 }
-.course h1 {
+.course h1 {    
     font-family: Bubbly;
     position: absolute;
     top: 50%;

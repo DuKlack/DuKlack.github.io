@@ -42,11 +42,12 @@
 
 .hero p {
     font-family: oridnary;
-    font-size: 1.5  rem;
+    font-size: 1.7em;
     margin-bottom: 20px;
 }
 
 .menu-btn {
+    font-family: oridnary;
     background: transparent;
     border: 5px solid white;
     border-radius: 10%;
