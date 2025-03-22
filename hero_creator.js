@@ -8,7 +8,7 @@ const heading = document.createElement('h1');
 heading.textContent = 'About Us';
 
 const paragraph = document.createElement('p');
-paragraph.textContent = 'A taste of tradition.';
+paragraph.textContent = 'Taste of tradition';
 
 const menuButton = document.createElement('a');
 menuButton.href = 'menu.html';
