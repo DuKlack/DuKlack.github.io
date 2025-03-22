@@ -42,6 +42,8 @@ window.addEventListener("hashchange", function() {
 document.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     const link= document.querySelectorAll(".nav-links li a")
+    const orderBtn=document.querySelector(".order-btn")
+ 
     //const button = link.querySelectorAll("a");
    //console.log(button)
    
@@ -52,7 +54,7 @@ document.addEventListener("scroll", function () {
        
         navbar.style.backgroundColor = `rgba(255, 224, 195,  ${opacity})`; // Update background color
         link.forEach(btn=>{
-        
+            orderBtn.style.color=`rgba( ${btn_color} ,${btn_color} , ${btn_color}, 1)`
             btn.style.color=`rgba( ${btn_color} ,${btn_color} , ${btn_color}, 1)`
         })
     }

@@ -1,6 +1,7 @@
 @font-face {
     font-family: Loverine;
-    src: url( "document/Loverine.otf");
+    word-spacing: 2px;
+    src: url( "document/GreatVibes-Regular.ttf");
 }
 @font-face {
     font-family: oridnary;
@@ -35,7 +36,7 @@
 .hero h1 {
     font-family: Loverine;
     word-spacing: 2px;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 10px;
 }
 

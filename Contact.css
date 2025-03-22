@@ -2,9 +2,12 @@
     font-family: Bubbly;
     src: url("document/SuperBubbly-G35nA.ttf");
 }
-
+@font-face {
+    font-family: oridnary;
+    src: url("document/Ordinary\ Notes.otf");
+}
 .Suvey {
-    font-family: Arial, sans-serif;
+    font-family: oridnary;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,6 +17,7 @@
     background-color: #f4f4f4;
 }
 .container {
+    font-family: oridnary;
     display: flex;
     background: #fff;
     padding: 20px;
@@ -23,14 +27,15 @@
     justify-content: flex-start;
 }
 .contact-info {
-    
+    font-family: oridnary;
+    font-size: 1.2em;
     margin-left: 20px;
 }
 .contact-info h3 {
     margin-bottom: 10px;
 }
 .contact-info p {
-    font-family: Bubbly;
+
     margin: 5px 0;
 }
 .contact-form {

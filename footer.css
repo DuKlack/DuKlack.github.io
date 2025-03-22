@@ -1,4 +1,10 @@
+@font-face {
+    font-family: oridany;
+    src: url("document/Ordinary\ Notes.otf");
+}
 footer {
+    font-family: oridany;
+    word-spacing: 2px;
     z-index: 999;
     display: flex;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
@@ -48,7 +54,7 @@ footer {
 
 .media a{
     text-decoration: none;
-    color: blue;
+    color: rgb(228, 173, 84);
     font-size: 30px;
    
 }

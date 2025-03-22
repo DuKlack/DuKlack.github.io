@@ -4,6 +4,7 @@
 }
 @font-face {
     font-family: ordinary;
+    word-spacing: 2px;
     src: url(document/Ordinary\ Notes.otf);
 }
 body {
@@ -43,10 +44,11 @@ body {
 
 .swiper-slide h3 {
     margin: 16px 0 8px;
+    font-family: ordinary;
 }
 
 .swiper-slide p {
-    font-family: Bubbly;
+    font-family: ordinary;
     color: #555;
 }
 

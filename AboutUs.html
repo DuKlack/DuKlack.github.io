@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="heroes.css">
 <link rel="stylesheet" href="footer.css">
 <script src="header.js" defer></script>
+<link rel="icon" type="image/x-icon" href="Semplice__2_-removebg-preview.png">
 <script src="https://kit.fontawesome.com/018043deb3.js" crossorigin="anonymous"></script>
 <script src="footer_creator.js"></script>
 
@@ -17,6 +18,10 @@
     font-family: Bubbly;
     src: url("document/SuperBubbly-G35nA.ttf");
 }
+@font-face {
+    font-family: oridnary;
+    src: url("document/Ordinary\ Notes.otf");
+}
 a {
     text-decoration: none;
 }    
@@ -25,6 +30,7 @@ body {
 }
 
 .Content {
+    font-family: oridnary;
     width: 100vw;
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers content horizontally */
@@ -32,10 +38,7 @@ body {
     min-height: 50vh; /* Makes it take full screen height */
     overflow: auto;
 }
-.Content p{
-    font-family: Bubbly;
 
-}
 
 .WhyVegan{
     overflow: hidden;
@@ -61,14 +64,17 @@ body {
     flex-direction: column;
 }
 .WhyVegan .images .img1  {
+    
     align-self: flex-start;
     height: auto;
     width: 45% ; 
 
 }
 .WhyVegan .images .img2  {
-    height: auto;
+    
     align-self: flex-end;
+    border: 5px solid black;
+    border-radius: 2px;
     width: 45%; 
     
 }
@@ -117,6 +123,7 @@ body {
     text-align: left;
 }
 .Document{
+    font-family: oridnary;
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers content horizontally */
     flex-direction: row;
@@ -141,8 +148,10 @@ body {
 .doc_btn:hover {
     background-color: lightgreen; /* Change background on hover */
 }
-
+.Our_Technology{
     
+    text-align: center;
+}
 
 </style>
 </head>
@@ -196,13 +205,38 @@ body {
     </div>
 </div>
 
-
-
 <div class="Document">
     <a href="documentation.html">
     <div class="doc_btn"><h1>Document </h1></div>
 </a>
 </div>
+<div class="Our_Technology">
+    <h1>Technologies Used</h1>
+  <ul class="tech-list">
+    <li>
+      <strong>Bootstrap</strong>
+      Source: <a href="https://getbootstrap.com/" target="_blank"  rel="noopener">Bootstrap</a>  
+      
+    </li>
+    <li>
+      <strong>Swiper.js</strong>
+      Source: <a href="https://swiperjs.com/" target="_blank" rel="noopener">Swiper.js</a>  
+      
+    </li>
+    <li>
+      <strong>Vite</strong> – Used for frontend development and bundling.  
+      Source: <a href="https://vitejs.dev/" target="_blank"  rel="noopener">Vite</a>  
+      
+    </li>
+    <li>
+      <strong>Node.js</strong> – Used for backend server-side functionality.  
+      Source: <a href="https://nodejs.org/" target="_blank"  rel="noopener">Node.js</a>  
+    </li>
+  </ul>
+</div>
+
+
+
 
 
 </body>
