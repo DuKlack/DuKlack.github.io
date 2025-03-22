@@ -33,6 +33,7 @@ footer {
     background-position: center;
     width: 40%;
     height: 30vw;
+    object-fit: cover;  
 }
 .media{
     width: 100%;
@@ -41,9 +42,14 @@ footer {
 .media img {
     height: fit-content;
     width:80px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
+
 .media a{
-    text-decoration: none;
+    color: blue;
+    font-size: 30px;
+   
 }
 @media (max-width: 768px) {
     footer {

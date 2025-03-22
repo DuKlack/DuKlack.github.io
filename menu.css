@@ -2,6 +2,10 @@
     font-family: Bubbly;
     src: url("document/SuperBubbly-G35nA.ttf");
 }
+@font-face {
+    font-family: ordinary;
+    src: url(document/Ordinary\ Notes.otf);
+}
 body {
     position: relative;
     width: 100%;
@@ -96,6 +100,7 @@ body {
     padding-top: 10vw;
 }
 .course h1 {
+    font-family: Bubbly;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,7 +135,7 @@ body {
 }
 
 .container {
-   
+    
     gap: 20px;
     background-color: #fff;
     width: 100%;
@@ -160,6 +165,8 @@ body {
    
 }
 .title {
+    letter-spacing: 2px;
+    font-family:ordinary ;
     font-weight: bold;
 }
 .price {
@@ -178,6 +185,7 @@ body {
     color: lightgreen;
 }
 .menu-item p {
-    font-family:Bubbly ;
+    letter-spacing: 2px;
+    font-family:ordinary ;
 }
 

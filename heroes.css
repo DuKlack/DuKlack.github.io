@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Loverine;
+    src: url( "document/Loverine.otf");
+}
+@font-face {
+    font-family: oridnary;
+    src: url("document/Ordinary\ Notes.otf");
+}
 .hero {
     height: 100vh;
     background: url('/food img/Cannoli Siciliani.jpg') no-repeat center center/cover;
@@ -25,12 +33,15 @@
 }
 
 .hero h1 {
+    font-family: Loverine;
+    word-spacing: 2px;
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-family: oridnary;
+    font-size: 1.5  rem;
     margin-bottom: 20px;
 }
 
