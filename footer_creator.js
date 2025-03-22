@@ -30,9 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="media"> 
                 <h3>Our Social Media</h3>
                 <a href="https://www.instagram.com/" target="_blank">
-                    
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
-                
+                <a href="https://www.facebook.com/" target="_blank">
+                   <i class="fa-brands fa-facebook"></i>
+                 </a>
                 <a href="https://www.x.com/" target="_blank">
                    <i class="fa-brands fa-twitter"></i>
                 </a>

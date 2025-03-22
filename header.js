@@ -48,7 +48,7 @@ document.addEventListener("scroll", function () {
     if (navbar) {
         let scrollPos = window.scrollY;
         let btn_color =250- window.scrollY;
-        let opacity = Math.min(1, 0.1 + scrollPos / 1000); // Increase opacity with scroll
+        let opacity = Math.min(1,scrollPos / 1000); // Increase opacity with scroll
        
         navbar.style.backgroundColor = `rgba(255, 224, 195,  ${opacity})`; // Update background color
         link.forEach(btn=>{

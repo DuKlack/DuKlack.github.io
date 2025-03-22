@@ -47,6 +47,7 @@ footer {
 }
 
 .media a{
+    text-decoration: none;
     color: blue;
     font-size: 30px;
    

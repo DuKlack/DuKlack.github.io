@@ -47,7 +47,8 @@
 
 .menu-btn {
     background: transparent;
-    border: 2px solid white;
+    border: 5px solid white;
+    border-radius: 10%;
     padding: 10px 20px;
     color: white;
     font-weight: bold;
